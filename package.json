@@ -1,6 +1,6 @@
 {
     "name": "autodoc-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Aplicație Node.js pur pentru Autodoc",
     "main": "index.js",
     "scripts": {
