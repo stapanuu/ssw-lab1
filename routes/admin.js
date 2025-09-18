@@ -15,7 +15,7 @@ function handleAdmin(req, res, pathname) {
   if (pathname.startsWith('/admin/edit/')) {
     if (!authRole(req, res, 'Admin')) return true;
 
-    const parts = pathname.split('/').filter(Boolean); // ["admin","edit","ID"]
+    const parts = pathname.split('/').filter(Boolean);
     const id = parseInt(parts[2]);
     const product = products.find(p => p.id === id);
     if (!product) {
